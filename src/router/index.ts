@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import DemoPage from '@/pages/DemoPage.vue'
 import IndexPage from '@/pages/IndexPage.vue'
+import LoginPage from '@/pages/Login.vue'
 
 const routes = [
   {
@@ -12,10 +13,18 @@ const routes = [
     },
   },
   {
+    path: '/login',
+    component: LoginPage,
+    meta: {
+      title: 'Vite + Vue + TypeScript + Tailwind Starter Template',
+    },
+  },  
+  {
     path: '/demo/',
     component: DemoPage,
     meta: {
-      title: 'Demo title'
+      title: 'Demo title',
+      auth:true
     },
   },
 ]
