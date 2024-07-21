@@ -17,12 +17,7 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
-        'vue-router',
-        'pinia',
-        {
-          '@/store': ['useStore'],
-        },
-        unheadVueComposablesImports,
+        'vue-router'
       ],
       dts: 'auto-imports.d.ts',
       vueTemplate: true,
